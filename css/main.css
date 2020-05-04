@@ -1,0 +1,571 @@
+/*************************************************************************/
+/*Reset Styling*/
+/*************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*************************************************************************/
+/*  Common Class Design  */
+/*************************************************************************/
+:root {
+    --website-theme: #3567ffcf;
+}
+
+.wrapper {
+    max-width: 1361px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--website-theme);
+    overflow: hidden;
+}
+
+.logo {
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-top: 22px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-section {
+    margin-top: 32px;
+    float: right;
+}
+
+.nav-section ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nav-section ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: bold;
+    border: 1.5px solid #fff;
+    border-radius: 50px;
+}
+
+.nav-section ul li a:hover {
+    background-color: #fff;
+    color: var(--website-theme);
+    transition: .3s;
+}
+
+/*Navigation Section Design End Here */
+
+.banner {
+    background: url(../img/banner_bg.jpg);
+    width: 1361px;
+    background-size: cover;
+    height: 350px;
+    opacity: .2;
+    overflow: hidden;
+}
+
+.banner-container {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 81px;
+    left: 0;
+}
+
+.banner-container .banner-text {
+    margin: 70px 0px 0px 250px;
+}
+
+.banner-container .banner-text h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.banner-container .banner-text h2 span {
+    color: blueviolet;
+}
+
+.banner-container .banner-text p {
+    width: 420px;
+    text-align: justify;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.banner-container .banner-img {
+    width: 250px;
+    margin: 10px 0px 0px 250px;
+}
+
+.banner-container .banner-img img {
+    width: 100%;
+}
+
+/*Welcome Banner Design */
+.welcome-banner {
+    width: 100%;
+    height: 330px;
+    padding: 70px;
+    overflow: hidden;
+    border-top: 1px solid #000;
+}
+
+.welcome-banner h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.welcome-banner p {
+    line-height: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/*Services section Starting from here */
+.service-section {
+    width: 100%;
+    height: 500px;
+    /*
+    background: url(../img/banner_bg_2.jpg);
+    background-size: cover;
+*/
+    background-color: var(--website-theme);
+    padding: 50px 0px 0px 100px;
+    position: relative;
+    color: #fff;
+}
+
+.row-one {
+    margin-bottom: 15px;
+}
+
+.row .col-1 {
+    width: 40%;
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.row .col-1 li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.row .col-1 li span {
+    padding-right: 5px;
+}
+
+.row .col-1 p {
+    text-align: justify;
+    font-weight: 500;
+}
+
+.row .col-1 h3 {
+    display: inline-block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.row .col-2 {
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    text-align: justify;
+}
+
+.row .col-2 i {
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.row .col-3 {
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    text-align: justify;
+}
+
+.row .col-2 span {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.row .col-3 i {
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+
+.row .col-3 span {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/*Work Section Style starting from here */
+.work-section-bg {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.work-section {
+    position: absolute;
+    top: 1152px;
+    left: 300px;
+    width: 750px;
+    height: 250px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.work-row {
+    display: flex;
+}
+
+.work-row .col-4 {
+    width: 40%;
+}
+
+.work-row .col-4 h2 {
+    display: inline-block;
+    margin: 10px 7px;
+}
+
+.work-row .col-4 p {
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 7px;
+    line-height: 20px;
+}
+
+.work-row .col-4 a {
+    margin-left: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--website-theme);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.work-row .col-4 a:hover {
+    background-color: #fff;
+    border: 1px solid var(--website-theme);
+    color: var(--website-theme);
+    transition: .3s;
+}
+
+.work-row .col-8 {
+    width: 60%;
+}
+
+.first-col {
+    display: flex;
+    padding: 35px 0px 35px 5px;
+    margin-left: 20px;
+}
+
+.first-col-img {
+    width: 250px;
+    margin-right: 8px;
+}
+
+.first-col-img h4 {
+    text-align: center;
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+.first-col-img img {
+    width: 100%;
+}
+
+/*Offer Section Style is here */
+.offer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: #ddd;
+    padding: 30px;
+    color: #000;
+    overflow: hidden;
+}
+
+.offer-img {
+    width: 50%;
+    height: 300px;
+}
+
+.offer-img img {
+    width: 100%;
+}
+
+.offer-text {
+    width: 50%;
+    display: inline-block;
+    padding: 15px 0px 0px 50px;
+}
+
+.offer-text h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.offer-text p {
+    text-align: justify;
+    width: 70%;
+}
+
+.offer-text ul {
+    padding: 10px 0px 15px 0px;
+}
+
+.offer-text ul li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.offer-text ul li span {
+    padding-right: 10px;
+    color: var(--website-theme);
+}
+
+.offer-text a {
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: var(--website-theme);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.offer-text a:hover {
+    background-color: #fff;
+    color: var(--website-theme);
+    border: 1px solid var(--website-theme);
+    transition: .3s;
+}
+
+/*Clients Section Design Here */
+.client-row {
+    display: flex;
+}
+
+.clients-section {
+    width: 100%;
+    height: 300px;
+    padding: 25px 40px;
+}
+
+.clients-section h3 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
+.client-img {
+    width: 150px;
+    height: 100px;
+}
+
+.client-img img {
+    width: 100%;
+}
+
+.client {
+    width: 50%;
+    display: flex;
+    margin-top: 25px;
+    padding-left: 35px;
+}
+
+.client-text {
+    width: 60%;
+    padding: 10px 20px 0px 30px;
+}
+
+.client-text p {
+    text-align: justify;
+}
+
+.client-text hr {
+    margin: 10px 0px;
+    border: .5px solid #000;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+/*Footer Section Style from Here */
+
+.footer-top {
+    width: 100%;
+    height: 400px;
+    background-color: var(--website-theme);
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-top .footer-row {
+    display: flex;
+}
+
+.footer-top .footer-contact {
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-top .footer-contact h2 {
+    text-transform: uppercase;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+}
+
+.footer-top .footer-contact i {
+    display: flex;
+    padding: 10px 5px;
+}
+
+.footer-top .footer-contact i p {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-top .footer-social {
+    width: 20%;
+}
+
+.footer-top .footer-social h2 {
+    text-transform: uppercase;
+    padding: 0px 30px;
+}
+
+.footer-top .footer-social li {
+    list-style: none;
+    padding: 20px 0px 0px 18px;
+}
+
+.footer-top .footer-social a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--website-theme);
+
+}
+
+.footer-top .footer-social a:hover {
+    border: 1px solid var(--website-theme);
+    background-color: var(--website-theme);
+    color: #fff;
+    transition: .2s;
+}
+
+.footer-top .footer-posts {
+    width: 30%;
+}
+
+.footer-top .footer-posts h2 {
+    text-transform: uppercase;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.footer-top .footer-posts p {
+    text-align: justify;
+    width: 80%;
+    margin: 10px 0px 15px 35px;
+}
+
+.footer-top .footer-form {
+    width: 25%;
+}
+
+.footer-top .footer-form h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-top .footer-form input {
+    padding: 10px 60px 10px 30px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-top .footer-form textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 2px 30px;
+    margin-bottom: 10px;
+}
+
+.footer-top .footer-form .btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    color: var(--website-theme);
+    font-weight: bolder;
+}
+
+.footer-top .footer-form .btn:hover {
+    background-color: var(--website-theme);
+    color: #fff;
+    transition: .3s;
+}
+
+/*Footer Bottom Section Design Here */
+.footer-bottom {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.footer-logo {
+    width: 250px;
+    float: left;
+    margin: 23px 0px 0px 80px;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-copyright {
+    display: inline-block;
+    color: #fff;
+    float: right;
+    padding: 32px 80px 0px 0px;
+}
+
+.footer-row {
+    padding: 0px 45px;
+}
